@@ -20,7 +20,9 @@
     "build": "tsup",
     "dev": "node --import=tsx src/index.ts",
     "format": "prettier --write \"**/*.{js,mjs,ts,md,json}\"",
-    "lint": "eslint \"**/*.{js,mjs,ts}\""
+    "lint": "eslint \"**/*.{js,mjs,ts}\"",
+    "typecheck": "tsc",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
@@ -28,6 +30,7 @@
     "eslint": "^9.22.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "globals": "^16.0.0",
+    "husky": "^9.1.7",
     "prettier": "^3.5.3",
     "tsup": "^8.4.0",
     "tsx": "^4.19.3",
