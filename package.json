@@ -3,6 +3,10 @@
   "version": "0.1.1",
   "description": "A CLI tool that converts PDF files into Markdown using Azure Document Intelligence for text extraction and OpenAI for Markdown formatting.",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/transformgovsg/pdf2md.git"
+  },
   "license": "AGPL-3.0-only",
   "files": [
     "dist",
