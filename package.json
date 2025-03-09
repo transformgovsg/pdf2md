@@ -54,6 +54,9 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild"
-    ]
+    ],
+    "overrides": {
+      "node-fetch@2.x>whatwg-url": "^14.0.0"
+    }
   }
 }
