@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.1.1 (2025-03-09)
+
+### Bug Fixes 🐞
+
+- fix: remove unnecessary `console.log` ([#4](https://github.com/transformgovsg/pdf2md/pull/4)) ([83f4907](https://github/transformgovsg/pdf2md/commit/83f4907ec34f09a78857585ade7db9da006fcc6b))
+
 ## 0.1.0 (2025-03-09)
 
 ### Initial Release 🚀
