@@ -2,11 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.2.0 (2025-03-10)
+
+### Feature ✨
+
+- feat: set default value for `OPENAI_CHAT_MODEL` environment variable to `o3-mini` ([#7](https://github.com/transformgovsg/pdf2md/pull/7)) ([3670011](https://github.com/transformgovsg/pdf2md/commit/3670011fe9269b37a7976fd55437d74b25fe7f52))
+
 ## 0.1.1 (2025-03-09)
 
 ### Bug Fixes 🐞
 
-- fix: remove unnecessary `console.log` ([#4](https://github.com/transformgovsg/pdf2md/pull/4)) ([83f4907](https://github/transformgovsg/pdf2md/commit/83f4907ec34f09a78857585ade7db9da006fcc6b))
+- fix: remove unnecessary `console.log` ([#4](https://github.com/transformgovsg/pdf2md/pull/4)) ([83f4907](https://github.com/transformgovsg/pdf2md/commit/83f4907ec34f09a78857585ade7db9da006fcc6b))
 
 ## 0.1.0 (2025-03-09)
 
