@@ -23,7 +23,7 @@ AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT=<your_azure_endpoint>
 AZURE_DOCUMENT_INTELLIGENCE_API_KEY=<your_azure_api_key>
 OPENAI_API_BASE_URL=<your_openai_base_url>
 OPENAI_API_KEY=<your_openai_api_key>
-OPENAI_CHAT_MODEL=<your_openai_chat_model>
+OPENAI_CHAT_MODEL=<your_openai_chat_model> # Default: o3-mini
 ```
 
 ## ⚡ Quick Start
