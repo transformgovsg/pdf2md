@@ -53,9 +53,11 @@ export function loadConfig(): Config {
     throw new Error("'OPENAI_API_KEY' environment variable is required.");
   }
 
-  const OPENAI_CHAT_MODEL = env.OPENAI_CHAT_MODEL;
+  const OPENAI_CHAT_MODEL = env.OPENAI_CHAT_MODEL || 'o3-mini';
   if (!isOpenAIChatModel(OPENAI_CHAT_MODEL)) {
-    throw new Error("'OPENAI_CHAT_MODEL' environment variable is required.");
+    throw new Error(
+      `'OPENAI_CHAT_MODEL' environment variable contains invalid or unsupported chat model: ${OPENAI_CHAT_MODEL}`,
+    );
   }
 
   return {
