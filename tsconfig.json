@@ -3,9 +3,9 @@
     "target": "ES2023",
     "lib": ["ES2023"],
     "module": "NodeNext",
-    "skipLibCheck": true,
-
     "moduleResolution": "NodeNext",
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
 
