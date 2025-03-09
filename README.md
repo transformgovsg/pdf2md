@@ -31,23 +31,23 @@ OPENAI_CHAT_MODEL=<your_openai_chat_model>
 To convert a PDF file to Markdown without installing locally, run:
 
 ```sh
-pnpm dlx pdf2md <path-to-pdf>
+pnpm dlx @transformgovsg/pdf2md <path-to-pdf>
 ```
 
 Alternatively, using yarn or npm:
 
 ```sh
-yarn dlx pdf2md <path-to-pdf>
+yarn dlx @transformgovsg/pdf2md <path-to-pdf>
 ```
 
 ```sh
-npx pdf2md <path-to-pdf>
+npx @transformgovsg/pdf2md <path-to-pdf>
 ```
 
 Example:
 
 ```sh
-pnpm dlx pdf2md ./path/to/document.pdf
+pnpm dlx @transformgovsg/pdf2md ./path/to/document.pdf
 ```
 
 ## 📜 License
