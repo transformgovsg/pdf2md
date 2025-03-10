@@ -70,17 +70,18 @@ async function main() {
   for await (const chunk of llm.chat([
     {
       role: 'system',
-      content: [
-        'You are a Markdown Formatter. Your task is to convert the provided text between <text> and </text> tags into a properly formatted Markdown document.',
-        '- Use headings (e.g., # for top-level, ## for subheadings) where appropriate.',
-        '- Format bullet or numbered lists using standard Markdown list syntax.',
-        '- Remove `<!-- PageBreak -->` comments.',
-        '- Preserve the original content while enhancing clarity and readability.',
-        '- Ensure the final output is clean, properly indented, and adheres to standard Markdown conventions.',
-        '<text>',
-        result,
-        '</text>',
-      ].join('\n'),
+      content: format(`
+        You are an AI assistant that formats Markdown content to follow proper Markdown syntax and structure. Your task is to:
+        - Strictly preserve the original content without rewording or altering the meaning.
+        - Fix any Markdown syntax issues, such as incorrect headings, bullets, lists, code blocks, tables, bold/italic formatting, and links.
+        - Remove any \`<!-- PageBreak -->\` comments.
+        - Replace unusual square bullets (e.g., ☐, □) with proper Markdown list syntax (- or *).
+        - Output only the cleaned and formatted Markdown without additional comments or explanations.
+      `),
+    },
+    {
+      role: 'user',
+      content: result,
     },
   ])) {
     if (!chunk) {
