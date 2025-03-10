@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.3.0 (2025-03-11)
+
+### Feature ✨
+
+- feat: enhance format markdown system prompt to strictly preserve the original content ([#9](https://github.com/transformgovsg/pdf2md/pull/9)) ([6565db5](https://github.com/transformgovsg/pdf2md/commit/6565db5822a513fe71d372b74ed0da55cbd1b7a5))
+
 ## 0.2.0 (2025-03-10)
 
 ### Feature ✨
